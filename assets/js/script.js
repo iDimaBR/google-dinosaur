@@ -44,7 +44,7 @@ addEventListener('keypress', function (event) {
 
 function insertCactus(){
     const cactus = document.createElement('div');
-    let cactusPosition = 6000;
+    let cactusPosition = 14000;
     let timerSpawn = Math.floor(Math.random() * 6000) + 1;
 
     cactus.classList.add('cactus');
