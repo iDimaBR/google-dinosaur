@@ -1,0 +1,59 @@
+body {
+    background:rgb(250, 248, 248);
+    overflow: hidden;
+    margin:0;
+}
+
+.dinosaur {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 7;
+    margin-left:5px;
+}
+
+.cactus {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url("../img/cactus.png");
+}
+
+.title {
+    text-align: center;
+    color: rebeccapurple;
+    margin-top:50px;
+    margin:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.subtitle {
+    text-align: center;
+    color: rgb(179, 32, 171);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes moveBackground {
+    from {
+        background-position: 1%;
+    }
+
+    to {
+        background-position: 0;
+    }
+}
+
+.background {
+    position: absolute;
+    bottom: 0;
+    background-image: url("../img/background.png");
+    background-repeat: repeat-x;
+    animation: moveBackground 600s infinite linear;
+    width:100%;
+    height:200px;
+}
+
+h4 {
+    margin: 0;
+}
