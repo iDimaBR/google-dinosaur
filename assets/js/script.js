@@ -44,8 +44,8 @@ addEventListener('keypress', function (event) {
 
 function insertCactus(){
     const cactus = document.createElement('div');
-    let cactusPosition = 14000;
-    let timerSpawn = Math.floor(Math.random() * 6000) + 1;
+    let cactusPosition = 3000;
+    let timerSpawn = Math.floor(Math.random() * 4000) + 1;
 
     cactus.classList.add('cactus');
     cactus.style.left = cactusPosition + 'px';
@@ -61,7 +61,7 @@ function insertCactus(){
             document.body.innerHTML = "<h1 class='title'>GAME OVER</h1><br><br><h3 class='subtitle'>Press any key to restart</h3>";
             gameover = true;
         }else{
-            cactusPosition -= 10;
+            cactusPosition -= 15;
             cactus.style.left = cactusPosition + 'px';
         }
     }, 20);
